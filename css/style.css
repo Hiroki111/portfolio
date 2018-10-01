@@ -1,0 +1,43 @@
+body {
+  padding-top: 5rem;
+}
+
+.intro{
+	display:table;
+	width:100%;
+	height:auto;
+	padding:100px 0;
+	text-align:center;
+	color:#fff;
+	background-color: #5998ff;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+
+.content-section{
+	padding: 80px 0 40px 0;
+}
+
+.works-section {
+	width: 100%;
+	padding: 50px 0;
+	color: #fff;
+	background: #212121 url(../img/code.jpg) no-repeat center;
+}
+
+footer{
+	margin-top:10px;
+	padding-top:30px;
+	height:80px;
+	text-align:center;
+}
+
+.page-scroll{
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -webkit-transform;
+	-moz-transition-duration: 1s;
+}
