@@ -21,8 +21,8 @@ body {
 		rgba(109, 255, 126, 0.45), 
 		rgba(109, 255, 126, 0.45)
 		),url(../img/blur-hero.jpg) no-repeat center;
-	background-size: cover;
-	min-height: 650px;
+	height: 95vh;
+	background-size: 100% 100%;
 }
 
 .content-section{
@@ -35,6 +35,20 @@ body {
 	padding: 50px 0;
 	color: #fff;
 	background: #212121 url(../img/code.jpg) no-repeat center;
+}
+
+.techs img{
+	max-height: 90px;
+	padding: 0 10px;
+}
+
+.tech-list tr td img{
+	max-height: 90px;
+	padding: 0 10px;
+}
+
+.tech-list li{
+	list-style: none;
 }
 
 footer{
