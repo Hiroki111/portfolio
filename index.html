@@ -35,6 +35,8 @@
     </div>
   </nav>
 
+  
+
   <section class="content-section" style="padding-top: 55px;">
     <div class="hero jumbotron">
       <div style="padding-top: 100px;">
@@ -56,38 +58,38 @@
         <div class="row" style="padding-top: 40px;">
           <div class="col-md-4">
             <div class="profile-img">
-            <img class="rounded mx-auto d-block" src="img/prof.png">
+              <img class="rounded mx-auto d-block" src="img/prof.png">
             </div>  
           </div>
           <div class="col-8">
             <div class="profile-description">
-            <h2>Hello, I'm Hiroki.</h2>
-            <p>I've been working as a web developer since January 2016.</p>
-            <p>I've been mainly working for back-end developement, and my strongest skill is back-end development with <strong>Laravel 5.</strong></p>
-            <p>For front-end development, I usually use <strong>React.js</strong> (for big and/or interactive apps) or <strong>jQuery</strong> (for relatively small sites, such as this portfolio).</p>
-            <p>Here is a list of languages / technologies I often use.</p>
-            <table class="tech-list">
-              <tr>
-                <td>Back-end:</td>
-                <td><img src="img/laravel.png"><img src="img/nodejs.png"></td>
-              </tr>
-              <tr>
-                <td>Front-end:</td>
-                <td><img src="img/react.png"><img src="img/jquery.png"><img src="img/angularjs.png"></td>
-              </tr>
-              <tr>
-                <td>Database:</td>
-                <td><img src="img/mysql.png"></td>
-              </tr>
-              <tr>
-                <td>Web server:</td>
-                <td><img src="img/nginx.png"></td>
-              </tr>
-              <tr>
-                <td>OS:</td>
-                <td><img src="img/linux.jpg"></td>
-              </tr>
-            </table>
+              <h2>Hello, I'm Hiroki.</h2>
+              <p>I've been working as a web developer since January 2016.</p>
+              <p>I've been mainly working for back-end developement, and my strongest skill is back-end development with <strong>Laravel 5.</strong></p>
+              <p>For front-end development, I usually use <strong>React.js</strong> (for big and/or interactive apps) or <strong>jQuery</strong> (for relatively small sites, such as this portfolio).</p>
+              <p>Here is a list of languages / technologies I often use.</p>
+              <table class="tech-list">
+                <tr>
+                  <td>Back-end:</td>
+                  <td><img src="img/laravel.png"><img src="img/nodejs.png"></td>
+                </tr>
+                <tr>
+                  <td>Front-end:</td>
+                  <td><img src="img/react.png"><img src="img/jquery.png"><img src="img/angularjs.png"></td>
+                </tr>
+                <tr>
+                  <td>Database:</td>
+                  <td><img src="img/mysql.png"></td>
+                </tr>
+                <tr>
+                  <td>Web server:</td>
+                  <td><img src="img/nginx.png"></td>
+                </tr>
+                <tr>
+                  <td>OS:</td>
+                  <td><img src="img/linux.jpg"></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -102,22 +104,57 @@
       class="container" must be within this div-->
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <a href="https://www.hiroki-t.com/" target="_blank"><img style="max-width: 200px;" src="img/blog-jp.png"></a>
+          <div class="col-md-4 work-container">
+            <img class="work-img" src="img/works/blog-jp.png">
+            <div class="work-hover-div">
+              <button type="button" class="learn-more-btn" data-toggle="modal" data-target="#work-modal">
+                Learn More
+              </button>
+            </div>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dum</p>
           </div>
-          <div class="col-md-4">
-            <a href="https://www.hiroki-t.com/" target="_blank"><img style="max-width: 200px;" src="img/blog-jp.png"></a>
+          <div class="col-md-4 work-container">
+            <img class="work-img" src="img/works/blog-jp.png">
+            <div class="work-hover-div">
+              <a href="https://www.hiroki-t.com/" target="_blank">
+                <div class="learn-more-btn">Learn More</div>
+              </a>
+            </div>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dum</p>
           </div>
-          <div class="col-md-4">
-            <a href="https://www.hiroki-t.com/" target="_blank"><img style="max-width: 200px;" src="img/blog-jp.png"></a>
+          <div class="col-md-4 work-container">
+            <img class="work-img" src="img/works/blog-jp.png">
+            <div class="work-hover-div">
+              <a href="https://www.hiroki-t.com/" target="_blank">
+                <div class="learn-more-btn">Learn More</div>
+              </a>
+            </div>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dum</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="work-modal" tabindex="-1" role="dialog" aria-labelledby="work-modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="contact" class="content-section text-center">
     <h1 class="text-center"><i class="fas fa-envelope-square"></i> Contact</h1>
