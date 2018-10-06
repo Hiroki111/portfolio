@@ -16,6 +16,16 @@ body {
 	background-size:cover;
 }
 
+#title-big{
+	color: #fff; 
+	font-size: 100px;
+}
+
+#title-small {
+	color: #fff; 
+	font-size: 50px;
+}
+
 .hero{
 	background: linear-gradient(
 		rgba(109, 255, 126, 0.45), 
@@ -118,6 +128,9 @@ footer {
 	max-height: 90px;
 	padding: 0 10px;
 }
+#tech-list{
+	padding-top: 50px;
+}
 
 #tech-list .row {
 	padding: 15px 70px;
@@ -163,4 +176,86 @@ footer{
 .fade2.show {
 	opacity: 1;
 	transform: scale(1);
+}
+
+@media (max-width: 986px){
+	.content-section {
+		min-height: 300px;
+	}
+}
+
+
+@media(max-width: 768px){
+	#title-big{
+		font-size: 60px;		
+	}
+
+	#title-small{
+		font-size: 35px;		
+	}
+
+	.hero{
+		margin-bottom: 0;
+	}
+
+	.profile-description{
+		flex: 100%;
+		max-width: 100%;
+		padding-top: 30px;
+	}
+
+	.profile-img{
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.profile-description h2, .profile-description p{
+		text-align: center;
+	}
+
+	#tech-list{
+		padding-top: 25px;
+	}
+
+	#tech-list h4 {
+		text-align: center;
+	}
+
+	#tech-list .row{
+		padding-top: 50px;
+	}
+
+	.content-section{
+		min-height: 300px;
+	}
+}
+
+@media(max-height: 560px){
+	#title-big{
+		font-size: 80px;		
+	}
+
+	#title-small{
+		font-size: 45px;		
+	}
+}
+
+@media(max-height: 470px){
+	#title-big{
+		font-size: 70px;		
+	}
+
+	#title-small{
+		font-size: 40px;		
+	}
+}
+
+@media(max-height: 430px){
+	#title-big{
+		font-size: 60px;		
+	}
+
+	#title-small{
+		font-size: 30px;		
+	}
 }

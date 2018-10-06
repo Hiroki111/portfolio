@@ -35,11 +35,11 @@
     </div>
   </nav>
 
-  <section class="content-section" style="padding-top: 55px;">
+  <section class="content-section" style="padding-top: 55px; padding-bottom: 0;">
     <div class="hero jumbotron">
       <div id="title-holder">
-        <h1 class="text-center" style="color: #fff; font-size: 100px;">Hiroki Takahashi</h1>
-        <h2 class="text-center" style="color: #fff; font-size: 50px;">Full stack web developer</h2>
+        <h1 id="title-big" class="text-center">Hiroki Takahashi</h1>
+        <h2 id="title-small" class="text-center">Full stack web developer</h2>
       </div>
       <div class="page-scroll" style="position: absolute; bottom: 20px; left: 47.5%; width: 60px;">
         <a class="nav-link" href="#profile" style="padding: 0">
@@ -54,13 +54,13 @@
     <div class="profile-body">
       <div class="container">
         <div class="row" style="padding-top: 40px;">
-          <div class="col-md-4">
+          <div class="col-md-4 profile-img">
             <div class="profile-img">
               <img class="rounded mx-auto d-block" src="img/prof.png">
             </div>  
           </div>
-          <div class="col-8">
-            <div class="profile-description">
+          <div class="col-8 profile-description">
+            <div>
               <h2>Hello, I'm Hiroki.</h2>
               <p>I'm a Japanese web develoer, currently residing in Australia.</p>
               <p>I started my career as a web developer in January 2016. Since then, I've been mainly working for back-end developement.</p>
@@ -166,9 +166,9 @@
           <div class="container">
             <div id="modal-work-description" class="row"></div>
             <div class="row">
-              <div class="col-md-4 offset-md-8">
+              <div class="col-md-12">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a id="modal-site-url" href="" target="_blank" class="btn btn-primary">View This Site</a>
+                <a id="modal-site-url" href="" style="float: right;" target="_blank" class="btn btn-primary">View This Site</a>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@
 
   <section id="contact" class="content-section text-center">
     <h1 class="text-center"><i class="fas fa-envelope-square"></i> Contact</h1>
-    <div style="padding-top: 80px;">
+    <div style="padding-top: 60px;">
       <p>Feel free to shoot me an email for any web development work!</p>
       <p><strong>takahashi@au-shushoku.rocks</strong></p>
       <p>Or, you can find me on...</p>
