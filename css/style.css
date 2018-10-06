@@ -25,6 +25,23 @@ body {
 	background-size: 100% 100%;
 }
 
+footer {
+	background: linear-gradient(
+		rgba(109, 255, 126, 0.45), 
+		rgba(109, 255, 126, 0.45)
+		),url(../img/blur-hero.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+#title-holder{
+	width: 100%;
+	height: 35%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
 .content-section{
 	min-height: 500px;
 	padding: 70px 0 40px 0;
@@ -33,8 +50,6 @@ body {
 .works-section {
 	width: 100%;
 	padding: 50px 0;
-	/*color: #fff;*/
-	/*background: #212121 url(../img/code.jpg) no-repeat center;*/
 }
 
 .work-container{
@@ -73,6 +88,14 @@ body {
 	text-align: center;
 }
 
+.work-hover-div .work-description{
+	display: none;
+}
+
+.work-description{
+	width: 100%;
+}
+
 .learn-more-btn {
 	border: 3px solid #4CAF50;
 	background-color: #fff;
@@ -88,6 +111,7 @@ body {
 
 .work-img{
 	width: 100%;
+	border-radius: 5px;
 }
 
 .techs img{
@@ -95,9 +119,16 @@ body {
 	padding: 0 10px;
 }
 
-.tech-list tr td img{
-	max-height: 90px;
+#tech-list .row {
+	padding: 15px 70px;
+}
+
+#tech-list .row div img{
+	max-height: 80px;
 	padding: 0 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .tech-list li{
@@ -116,4 +147,20 @@ footer{
 	-webkit-transition-duration: 1s;
 	-moz-transition-property: -webkit-transform;
 	-moz-transition-duration: 1s;
+}
+
+.modal-img {
+
+}
+
+.fade2 {
+	transform: scale(0.9);
+	opacity: 0;
+	transition: all .2s linear;
+	display: block !important;
+}
+
+.fade2.show {
+	opacity: 1;
+	transform: scale(1);
 }

@@ -14,4 +14,15 @@ $(function() {
 		}, 1500, 'easeInOutExpo');
 		event.preventDefault();
 	});
+
+	$('.learn-more-btn').bind('click', function() {
+		var imgSrc = $(this).closest(".work-container").find('.work-img').attr('src');
+		$('#modal-img').attr("src", imgSrc);
+
+		var description = $(this).closest(".work-hover-div").find('.work-description').clone();
+		$('#modal-work-description').html(description);
+
+		var url = $(this).closest(".work-hover-div").find('.site-url').attr('data-url');
+		$('#modal-site-url').attr("href", url);
+	});
 });
